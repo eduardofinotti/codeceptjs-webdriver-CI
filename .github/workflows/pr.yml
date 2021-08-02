@@ -45,7 +45,10 @@ jobs:
           npm i @wdio/selenium-standalone-service
           npm i codeceptjs
           npm i webdriverio
+          npm install selenium-standalone -g
           npm install
+          selenium-standalone install
+          selenium-standalone start &>/dev/null &
 
       # Regression test execute Android
       - name: Run tests Android

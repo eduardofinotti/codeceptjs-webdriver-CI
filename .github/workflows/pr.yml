@@ -53,5 +53,5 @@ jobs:
       # Regression test execute Android
       - name: Run tests Android
         run: |
-          npx codeceptjs run
+          codeceptjs run
 

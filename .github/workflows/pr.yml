@@ -16,6 +16,6 @@ jobs:
 
       - name: Install dependencies and run tests
         run: |
-          npm install && npm test
           npx playwright install-deps
           npx playwright install-deps chromium
+          npm install && npm test

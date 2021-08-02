@@ -21,7 +21,7 @@ exports.config = {
   name: "curso-automacao-web-codeceptjs",
   plugins: {
     wdio: {
-      enabled: true,
+      enabled: false,
       services: ["selenium-standalone"],
     },
     pauseOnFail: {},

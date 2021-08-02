@@ -27,7 +27,7 @@ jobs:
         
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    
+
       # Checkout  do codigo do projeto
       - name: Checkout
         uses: actions/checkout@v2
@@ -41,7 +41,8 @@ jobs:
       # Dependecies install
       - name: Install dependecies
         run: |
-          sudo apt-get install google-chrome-stable
+          wget --no-verbose -O /tmp/chrome.deb https://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_91_amd64.deb \&& apt install -y /tmp/chrome.deb \&& rm /tmp/chrome.deb
+
           npm install
 
       # Regression test execute Android

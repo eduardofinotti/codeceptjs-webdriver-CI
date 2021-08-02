@@ -18,4 +18,5 @@ jobs:
         run: |
           npx playwright install-deps
           npx playwright install-deps chromium
-          npm install && npm test
+          npm install 
+          npx codeceptjs run

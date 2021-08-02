@@ -8,11 +8,9 @@ exports.config = {
   tests: "./*_test.js",
   output: "./output",
   helpers: {
-    Playwright: {
+    WebDriver: {
       url: "https://www.qazando.com.br",
-      show: false,
-      browser: "chromium",
-      windowSize: "1900x1240",
+      browser: "chrome",
     },
   },
   include: {
@@ -22,6 +20,10 @@ exports.config = {
   mocha: {},
   name: "curso-automacao-web-codeceptjs",
   plugins: {
+    wdio: {
+      enabled: false,
+      services: ["selenium-standalone"],
+    },
     pauseOnFail: {},
     retryFailedStep: {
       enabled: true,

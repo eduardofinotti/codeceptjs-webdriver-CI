@@ -41,7 +41,6 @@ jobs:
       # Dependecies install
       - name: Install dependecies
         run: |
-          sudo apt-get install google-chrome-stable
           npm install
 
       # Regression test execute Android

@@ -10,7 +10,7 @@ exports.config = {
   helpers: {
     WebDriver: {
       url: "https://www.qazando.com.br",
-      browser: "chrome",
+      browser: "firefox",
     },
   },
   include: {

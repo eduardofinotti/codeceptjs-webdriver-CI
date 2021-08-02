@@ -41,6 +41,7 @@ jobs:
       # Dependecies install
       - name: Install dependecies
         run: |
+          sudo apt install firefox
           npm install
 
       # Regression test execute Android

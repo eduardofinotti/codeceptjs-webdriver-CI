@@ -24,7 +24,8 @@ jobs:
       fail-fast: false
       matrix:
         node-version: [12.x]
-        
+
+      # Checkout  do codigo do projeto
       - name: Checkout
         uses: actions/checkout@v2 
 
